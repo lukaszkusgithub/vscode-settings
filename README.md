@@ -24,35 +24,6 @@ code --list-extensions > extensions.txt
 
 This command generates a file named `extensions.txt` containing a list of installed extensions.
 
-### 3. Create a GitHub Repository
-1. Go to [GitHub](https://github.com/) and create a new repository.
-   - Name it something like `vscode-backup`.
-   - Set it to public or private as per your preference.
-2. Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/your-username/vscode-backup.git
-```
-
-### 4. Add Files to the Repository
-1. Copy `settings.json`, `keybindings.json`, and `extensions.txt` into the cloned repository folder.
-2. Optionally, add a `README.md` file with instructions.
-3. Commit and push the changes to GitHub:
-
-```bash
-# Navigate to the repository folder
-cd vscode-backup
-
-# Add files
-git add settings.json keybindings.json extensions.txt
-
-# Commit changes
-git commit -m "Backup VS Code settings and extensions"
-
-# Push to GitHub
-git push origin main
-```
-
 ---
 
 ## Restore Instructions
