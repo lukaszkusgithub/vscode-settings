@@ -1,0 +1,213 @@
+{
+	// **Editor Settings**
+	"editor.formatOnSave": true, // Automatically format code when saving
+	"editor.fontSize": 10, // Font size in the editor
+	"editor.rulers": [80, 120], // Vertical rulers for line length guidance
+
+	// **Theme Settings**
+	"workbench.iconTheme": "material-icon-theme", // Icon theme for the editor
+	"workbench.colorTheme": "Dracula Theme", // The color theme used in the editor
+	"workbench.preferredDarkColorTheme": "Dracula Theme", // Preferred dark theme
+	"workbench.preferredHighContrastColorTheme": "Dracula Theme", // Preferred high-contrast theme
+	"workbench.preferredLightColorTheme": "Dracula Theme", // Preferred light theme
+	"workbench.preferredHighContrastLightColorTheme": "Dracula Theme", // Preferred high-contrast light theme
+
+	// **Theme Customizations (Colors)**
+	"workbench.colorCustomizations": {
+		"[Dracula Theme]": {
+			// **Editor Background Color**
+			"editor.background": "#22212D", // Background color of the code editor
+
+			// **Tab Bar Customizations (Bar with open file tabs)**
+			"editorGroupHeader.tabsBackground": "#0B0A0F", // Background color of the tab bar (where open file tabs appear)
+
+			// **Top Bar Customizations (Window Title Bar)**
+			"titleBar.activeBackground": "#141320", // Background color of the active title bar
+			"titleBar.activeForeground": "#ffffff", // Text color of the active title bar (file or folder name)
+			"titleBar.inactiveBackground": "#141320", // Background color of the inactive title bar
+			"titleBar.inactiveForeground": "#888888", // Text color of the inactive title bar
+
+			// **File Tab Customizations (Top bar with file tabs)**
+			"tab.inactiveBackground": "#141320", // Background color of inactive file tabs (not opened)
+			"tab.inactiveForeground": "#605987", // Text color of inactive file tabs
+
+			// **Status Bar Customizations (Bar at the bottom of the window)**
+			"statusBar.background": "#0B0A0F", // Background color of the status bar
+			"statusBar.noFolderBackground": "#1a1a1a", // Background when no folder is open
+			"statusBar.debuggingBackground": "#511f1f", // Background color when debugging is active
+
+			// **Debug Toolbar Customizations (Tools during debugging)**
+			"debugToolBar.background": "#1a1a1a", // Background color of the debug toolbar
+
+			// **Panel Customizations (Output, Debug Console, Terminal)**
+			"panel.background": "#22212D", // Background color of the panel (Output, Debug Console, etc.)
+			"panel.border": "#000000", // Border color of the panel
+			"panelTitle.activeForeground": "#ffffff", // Text color for active panel title
+			"panelTitle.inactiveForeground": "#888888", // Text color for inactive panel title
+
+			// **Terminal Customizations**
+			"terminal.background": "#22212D", // Background color of the terminal
+			"terminal.foreground": "#c7c7c7", // Text color in the terminal
+
+			// **Sidebar Customizations (Explorer, Source Control, Extensions)**
+			"sideBar.background": "#141320", // Background color of the sidebar
+			"sideBar.border": "#000000", // Border color of the sidebar
+			"sideBar.foreground": "#c7c7c7", // Text color in the sidebar
+			"sideBarSectionHeader.background": "#22212D", // Background color of section headers in the sidebar (e.g. Explorer, Outline)
+			"sideBarSectionHeader.foreground": "#ffffff", // Text color of section headers in the sidebar
+
+			// **Timeline/Outline Item Customizations**
+			"list.activeSelectionBackground": "#2B2839", // Background color of active item in list (e.g., Timeline, Outline)
+			"list.activeSelectionForeground": "#ffffff", // Text color of active item
+			"list.inactiveSelectionBackground": "#111016", // Background color of inactive items
+			"list.inactiveSelectionForeground": "#cccccc", // Text color of inactive items
+
+			// **Activity Bar Customizations (Bar on the left with icons like Explorer, Git, Debug)**
+			"activityBar.background": "#2B2740", // Background color of the activity bar
+			"activityBar.border": "#000000", // Border color of the activity bar
+			"activityBar.activeBackground": "#BD93F9", // Background color of the active icon in the activity bar
+			"activityBar.activeBorder": "#ff4081", // Border color around the active icon in the activity bar
+			"activityBar.foreground": "#ffffff", // Color of the active icon in the activity bar
+			"activityBar.inactiveForeground": "#888888", // Color of inactive icons in the activity bar
+			"activityBarBadge.background": "#ff4081", // Background color of the badge (e.g., notification count)
+			"activityBarBadge.foreground": "#ffffff" // Color of the text inside the badge
+		},
+
+		// **Editor Ruler Customizations (Vertical guidelines in the editor)**
+		"editorRuler.foreground": "#ff4081" // Color of the vertical ruler
+	},
+
+	// **Workspace Trust Settings**
+	"security.workspace.trust.untrustedFiles": "open", // Automatically open untrusted files (instead of blocking them)
+
+	// **Window Settings**
+	"window.zoomLevel": 2, // Enable breadcrumbs for easy navigation
+
+	// **Debug Toolbar Location**
+	"debug.toolBarLocation": "docked", // Dock the debug toolbar
+
+	// **Editor Settings (Cursor and Line Height)**
+	"editor.cursorBlinking": "phase", // Cursor blinking style
+	"editor.cursorStyle": "line", // Cursor style (line, block, etc.)
+	"editor.lineHeight": 18, // Line height for better readability
+
+	// **Java Settings**
+	"java.project.sourcePaths": ["src"], // Source paths for Java projects
+
+	// **Run on Save Settings (For automatically formatting Java files)**
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				"match": "\\.java$",
+				"cmd": "google-java-format --replace ${file}" // Automatically format Java files using Google Java Format
+			}
+		]
+	},
+
+	// **Startup Editor Settings**
+	"workbench.startupEditor": "none", // No specific editor to open on startup
+
+	// **Telemetry Settings**
+	"redhat.telemetry.enabled": true, // Enable Red Hat telemetry
+
+	// **Terminal Settings**
+	"terminal.integrated.macOptionClickForcesSelection": true, // Enable "Mac Option Click" for selecting text in the terminal
+
+	// **Settings Sync**
+	"settingsSync.ignoredSettings": ["editor.fontSize"], // Ignore font size settings during settings sync
+
+	// **Emmet for React**
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact", // Enable Emmet for JavaScript (React)
+		"typescript": "typescriptreact", // Enable Emmet for TypeScript (React)
+		"javascriptreact": "javascriptreact", // Ensure JSX is recognized
+		"typescriptreact": "typescriptreact" // Ensure TSX is recognized
+	},
+	"emmet.syntaxProfiles": {
+		"javascript": {
+			"selfClosingStyle": "xml" // Use self-closing tags in JavaScript
+		},
+		"javascriptreact": {
+			"selfClosingStyle": "xml" // Use self-closing tags in JSX
+		},
+		"typescript": {
+			"selfClosingStyle": "xml" // Use self-closing tags in TypeScript
+		},
+		"typescriptreact": {
+			"selfClosingStyle": "xml" // Use self-closing tags in TSX
+		}
+	},
+
+	// **Prettier Settings**
+	"prettier.tabWidth": 4, // Set tab width for Prettier
+	"prettier.useTabs": true, // Use tabs instead of spaces
+	"prettier.trailingComma": "es5", // Add trailing commas where valid in ES5
+	"prettier.bracketSameLine": true, // Place closing brackets on the same line
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for HTML
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for CSS
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for SCSS
+	},
+	"[sass]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for Sass
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for JavaScript
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for TypeScript
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for JSON
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for JSON with comments
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for TypeScriptReact
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for JavaScriptReact
+	},
+
+	// **CSS / SCSS Linting Settings**
+	"css.lint.important": "warning", // Warn on usage of !important in CSS
+	"scss.lint.important": "warning", // Warn on usage of !important in SCSS
+
+	// **Autoclose Tag Settings**
+	"auto-close-tag.activationOnLanguage": [
+		"xml",
+		"php",
+		"blade",
+		"ejs",
+		"jinja",
+		"plaintext",
+		"markdown",
+		"vue",
+		"liquid",
+		"erb",
+		"lang-cfml",
+		"cfml",
+		"HTML (EEx)",
+		"HTML (Eex)",
+		"plist",
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+
+	"auto-close-tag.enableAutoCloseSelfClosingTag": true,
+
+	"files.associations": {
+		"*.tsx": "typescriptreact"
+	}, // Automatically close tags in these languages
+
+	// **Tabnine**
+	"tabnine.experimentalAutoImports": true,
+	"javascript.updateImportsOnFileMove.enabled": "always"
+}
